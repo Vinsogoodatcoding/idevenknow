@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.12/lib/p5.min.js"></script>
+   
+</head>
+<body>
+    <script>     
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background('#A4031F');
+  rect(30, 20, 55, 55);
+}
+function draw() {
+    //console.log(mouseX)
+    //rect(mouseX, mouseY, 55, 55);
+    //rect(mouseX, mouseY, mouseX-pmouseX, mouseY-pmouseY);
+    if (mouseIsPressed == true) {    
+        strokeWeight(10);
+    line(pmouseX,pmouseY,mouseX,mouseY)
+    }
+    //line(pmouseX,pmouseY,mouseX,mouseY)
+
+
+}
+    </script>
+</body>
+</html>
 
